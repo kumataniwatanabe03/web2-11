@@ -2,7 +2,7 @@
 <html>
 <head>
  <meta charse="UTF-8">
- <title>直しても直しても18行目でエラーを吐く</title>
+ <title>18行目でエラーを吐く</title>
   <style>
    body { margin: 0; }
    canvas { width: 100%; height: 100% }
@@ -25,7 +25,7 @@
         camera.updateProjectionMatrix();
        }, false );
    
-       var light = ner THREE.DirectionalLight(0xcccccc);
+       var light = new THREE.DirectionalLight(0xcccccc);
        light.position.set(0,100,30);
        scene.add(light);
        scene.add(new THREE.AmbientLight(0x666666));
